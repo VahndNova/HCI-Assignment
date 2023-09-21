@@ -1,0 +1,245 @@
+body{
+  background: rgb(35, 35, 35);
+}
+
+.navbar {
+  box-shadow: 0px .5px 5px 0px #aaa;
+  position: fixed;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  opacity: 0.85;
+  height: 69px;
+  z-index: 12;
+}
+
+.main-title{
+  font-size: 10vh;
+  font-weight: 50;
+  margin-bottom: 2rem;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+}
+
+.menu-items {
+  order: 2;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-items li {
+  align-items: flex-end;
+  list-style: none;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 0rem;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: 400;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-items a:hover {
+  color: #de4646;
+  transition: color 0.3s  0s ease-in-out;
+}
+
+.logo {
+  cursor: pointer;
+  /* text-decoration: none;
+  font-size: 2.3rem; */
+  /* margin-bottom: 3rem; */
+  /* padding-bottom: 2rem; */
+  margin-left: 20px;
+  /* font-size: 48px; */
+  /* font-family: 'Bebas Neue', cursive; */
+  width: 120px;
+  margin-top: 0.75rem;
+  /* margin-right: 800px; */
+  position: relative;
+}
+
+img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+.sign-in{
+  padding: 9px 25px;
+  background-color: rgba(255, 255, 255, 0.539);
+  border: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;;
+  font-family: 'Montserrat', sans-serif;
+  margin-right: 1rem;
+  margin-top: 3px;
+  font-weight: 400;
+}
+
+.sign-in:hover{
+  background-color: rgba(255, 255, 255, 0.171);;
+}
+
+.showcase-area {
+  height: 100vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.436),
+      rgba(111, 111, 111, 0.379)
+    ),
+    url("../Images/DSC_6145.png");
+  background-size: cover;
+  background-position: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 1.6rem;
+  color: aliceblue;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 1em;
+  text-transform: uppercase;
+  font-weight: small;
+  transition: background 0.3s ease-in-out
+}
+
+.btn-primary {
+  color: #fff;
+  background: rgba(146, 146, 146, 0.363);
+  transition: background 0.3s ease-in-out
+}
+
+.btn-primary:hover {
+  background: #de4646;
+  transition: background 0.3s ease-in-out 0s;
+}
+
+.footer-container{
+  box-sizing: border-box;
+  box-shadow: 0px 0px 7px 0px #aaa;
+  background-color: rgba(58, 58, 58, 0.511);
+  padding: 0 0 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer{
+  width: 100%;
+  height: 30vh;
+  background-color: rgba(56, 56, 56, 0.39);
+  color: #de4646;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.footer-heading{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4rem;
+}
+
+.footer-heading h2{
+  margin-bottom: 1rem;
+  margin-top: 2.5rem;
+}
+
+.footer-heading a{
+  color: aliceblue;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  transition: all 0.1s ease-in-out 0s;
+}
+
+.footer-heading a:hover{
+  color: #de4646d0;
+  transition: all 0.1s ease-in-out 0s;
+}
+
+.email-news h2{
+  margin-bottom: 1rem;
+  margin-top: 2.5rem;
+}
+
+#footer-mail{
+  width: 250px;
+  height: 35px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+#footer-email::placeholder{
+  color: #de4646;
+}
+
+#submit{
+  width: 80px;
+  height: 35px;
+  border: #fff;
+  border-radius: 8px;
+  background-color: rgba(240, 248, 255, 0.436);
+  transition: all 0.5s ease-in-out 0s;
+  outline: none;
+}
+
+#submit:hover{
+  cursor: pointer;
+  background-color: rgba(181, 189, 196, 0.247);
+  transition: all 0.5s ease-in-out 0s;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer-2{
+      display: none;
+  }
+  .email-news{
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .email-news{
+      display: none;
+  }
+  .sign-in{
+    display: none;
+  }
+}
+
+.copyright{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+  color: rgb(105, 105, 105);
+}
